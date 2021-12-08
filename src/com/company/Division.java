@@ -7,4 +7,16 @@ public class Division {
         float resultat = a/b;
         return resultat;
     }
+
+    public double division2(int a, int b){
+        float resultat = 0;
+        try{
+            resultat = a/b;
+        }catch(ArithmeticException e){
+            System.out.println("Division par zéro impossible.");
+        }
+        return resultat;
+    }
+
+
 }

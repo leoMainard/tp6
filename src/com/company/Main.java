@@ -13,11 +13,17 @@ public class Main {
         at com.company.Main.main(Main.java:14)*/
     }
 
+    public static void exercice2(){
+        Division d2 = new Division();
+        d2.division2(10,0);
+    }
+
 
 
 
     public static void main(String[] args) {
-        exercice1();
+       // exercice1();
+        exercice2();
 
     }
 }
