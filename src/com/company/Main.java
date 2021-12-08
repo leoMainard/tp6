@@ -1,5 +1,8 @@
 package com.company;
 
+import javax.imageio.IIOException;
+import java.io.IOException;
+
 public class Main {
 
     public static void exercice1(){
@@ -15,7 +18,16 @@ public class Main {
 
     public static void exercice2(){
         Division d2 = new Division();
-        d2.division2(10,0);
+        System.out.println(d2.division2(10,0));
+    }
+
+    public static void exercice3(){
+        Division d3 = new Division();
+        try{
+            System.out.println(d3.division3(10,0));
+        }catch(IOException e){
+            System.out.println("Division par zéro.");
+        }
     }
 
 
@@ -23,7 +35,8 @@ public class Main {
 
     public static void main(String[] args) {
        // exercice1();
-        exercice2();
+        // exercice2();
+        exercice3();
 
     }
 }
