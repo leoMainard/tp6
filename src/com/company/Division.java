@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.IOException;
+
 public class Division {
 
 
@@ -16,6 +18,15 @@ public class Division {
             System.out.println("Division par zéro impossible.");
         }
         return resultat;
+    }
+
+    public double division3(int a, int b) throws IOException {
+
+        try{
+            return a/b;
+        }catch(ArithmeticException e){
+            throw new IOException();
+        }
     }
 
 

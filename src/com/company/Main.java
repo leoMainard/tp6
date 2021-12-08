@@ -30,6 +30,16 @@ public class Main {
         }
     }
 
+    public static void exercice4(){
+        Factorielle f = new Factorielle();
+
+        try{
+            f.calcul(null);
+        }catch(IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
 
 
 
